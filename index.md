@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Heywood Shepherd - Chartered Accountants in Macclesfield
 description: >-
   At Heywood Shepherd, clients always come first. We are a firm of Chartered Accountants based in Macclesfield, Cheshire.
   The firm is a member of the Institute of Chartered Accountants in England & Wales. Our aim is to provide the highest ethical standards, good quality service and business expertise.
