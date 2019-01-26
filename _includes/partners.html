@@ -1,0 +1,15 @@
+{% for partner in site.partners %}
+<div class="media">
+    <a href="{{ partner.url }}" class="pull-left collection-image">
+        {% if partner.image %}
+        <img class="media-object" src="{{ partner.image }}" alt="{{ partner.title }}" style="max-width: 200px;">
+        {% endif %}
+    </a>
+    <div class="media-body">
+        <h4 class="media-heading">
+            <a href="{{ partner.url }}">{{ partner.name }}</a>
+        </h4>
+        <p>{{ partner.desc }}</p>
+    </div>
+</div>
+{% endfor %}

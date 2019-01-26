@@ -1,0 +1,41 @@
+{% include header.html %}   
+
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ page.title }}</h1>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-md-9 col-sm-8 col-xs-12">
+        <form id="element-" class="form " action="https://formspree.io/dan@block8.co.uk" method="POST" enctype="multipart/form-data">
+         <section class="form-group row">
+          <div class="col-lg-6">
+          <section class="form-group">
+          <label class="">Name</label><input type="text" class="form-control" name="name" required>
+          </section> </div>
+          </section> <section class="form-group  ">
+          <label class="">Email Address</label> <input type="email" class="form-control" name="_replyto" required>
+          </section> <div class="form-group  ">
+          <label for="element-phone">Phone Number</label>
+          <div class="controls">
+          <input  type="text" class="form-control " name="phone" pattern="([0-9 ]+)" required>
+          </div>
+          </div> <div class="form-group  ">
+          <label for="element-message">Message</label>
+          <div class="controls">
+          <textarea rows="4" id="element-message" class="form-control " name="message" required></textarea>
+          </div>
+          </div> <footer>
+          <button type="submit" class="btn btn-success">
+          Submit	</button>
+          </footer>
+          </form>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12">
+        {{ content }}
+    </div>
+  </div>
+
+{% include footer.html %}

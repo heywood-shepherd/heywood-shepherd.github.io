@@ -1,0 +1,45 @@
+{% include header.html %}
+<div class="masthead" style="background-image: url('/assets/images/masthead.jpeg');">
+  <div class="row">
+    <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+      <h1>Heywood Shepherd Chartered Accountants</h1>
+    </div>
+    <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+      <div class="well">
+        <p><a class="btn btn-success" href="/contact-us">Contact us »</a>&nbsp;To discuss how we can be of assistance to you or to book your first appointment. The first hour is always free of charge.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col-lg-8 col-md-7 col-sm-6">
+    <div style="margin-top: 20px">
+      {{ content }}
+
+
+      <h2 style="margin-top: 50px;">How can we help you?</h2>
+    <div class="homepage-feature">
+    <a href="/our-services/taxation">Taxation</a>
+    <p>Tax legislation is complex and specialist advice is essential to both business and individual clients.</p> </div>
+    <div class="homepage-feature">
+     <a href="/our-services/audit-work">Audit Work</a>
+    <p>We are authorised by the ICAEW to carry out audit work.</p> </div>
+    <div class="homepage-feature">
+    <a href="/our-services/accountancy">Accountancy</a>
+    <p>We offer services ranging from book keeping to the production of accounts for all types of business.</p> </div>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-5 col-sm-6">
+        <h2>Latest Newsletters</h2>
+        <ul>
+            {% for item in site.data.newsletters %}
+            <li style="margin-bottom: 20px">
+              <a href="{{ item.link }}">{{ item.name }}</a><br>
+              {{ item.desc }}
+            </li>
+            {% endfor %}
+          </ul>
+    </div>
+</div>
+    
+{% include footer.html %}

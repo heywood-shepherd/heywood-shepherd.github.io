@@ -1,0 +1,24 @@
+{% include header.html %}   
+
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ page.title }}</h1>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+      {% if page.image %}
+      <img class="pull-right" style="width: 400px;" src="{{ page.image }}">
+      {% endif %}
+      {{ content }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+        <iframe style="width: 100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.893260246336!2d-2.1233109999999833!3d53.255612999999975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a493b79d26d15%3A0x319860accc2ecf64!2sHeywood+Shepherd!5e0!3m2!1sen!2suk!4v1395830268564&amp;ie=UTF8&amp;output=embed"></iframe> </div>
+    </div>
+  </div>
+
+{% include footer.html %}
