@@ -13,4 +13,4 @@ We are a firm of Chartered Accountants based in Macclesfield, Cheshire. The firm
 
 Friendly, experienced and professional help lies at the very centre of the Heywood Shepherd approach.
 
-At Heywood Shepherd, clients always come first!
+At Heywood Shepherd, clients always come first.
